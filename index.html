@@ -5,26 +5,13 @@
         <meta http-equiv="X-UA_Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
         <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
         <link rel="stylesheet" href="assets/css/style.css">
         <title>Portofolio Website</title>
     </head>
 
     <body>
-        <header>
-            <nav>
-                <ul id="navbar" class="nav__links">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Projects</a></li>
-                    <li><a href="#">About Me</a></li>
-                    <a class="cts" href="#"><button>Contact Me</button></a>
-
-                </ul>
-
-            </nav>
-            
-        </header>
-
 
         <section class="wrapper">
             <div id="stars"></div>
@@ -33,7 +20,21 @@
         </section>
 
 
-        <main class="main">
+
+        <main id="main" class="main">
+            <header>
+                <nav>
+                    <ul id="navbar" class="nav__links">
+                        <li><a href="#main">Home</a></li>
+                        <li><a href="#">Projects</a></li>
+                        <li><a href="#about">About Me</a></li>
+                        <a class="cts" href="#contact"><button>Contact Me</button></a>
+    
+                    </ul>
+    
+                </nav>
+                
+            </header>
             <section class="home" id="home">
                 <div class="home__container container grid">
                     <div class="home__content">
@@ -44,7 +45,7 @@
                 </div>
             </section>
 
-            <section class="about section" id="about">
+            <section id="about" class="about section" id="about">
                 <div class="about__container container grid">
                     <img src="assets/img/about.jpeg" alt="" class="about__img">
                     <div class="about__content">
@@ -84,11 +85,7 @@
                             <div class="tabs__item" data-content id="education">
                                 <div class="tabs__data grid">
 
-                                    <p class="tabs__description"><span>Lorem ipsum dolor sit amet</span>, consectetur <span>adipiscing elit. Quisque sit.</span></p>
-                                    
-                                    <p class="tabs__description"><span>Lorem ipsum dolor sit amet</span>, consectetur <span>adipiscing elit. Quisque sit.</span></p>
-
-                                    <p class="tabs__description"><span>Lorem ipsum dolor sit amet</span>, consectetur <span>adipiscing elit. Quisque sit.</span></p>
+                                    <p class="tabs__description"><span>CODE University of Applied Sciences</span>, 2023 - Present <span>B.Sc. Software Engineering.</span></p>
 
                                 </div>
                             </div>
@@ -99,6 +96,75 @@
                 </div>
             </section>
 
+            <!-- Contact me part-->
+            <div id="contact" class="container_2">
+                <main class="row">
+                    <section class="col left">
+                        <div class="contact__title">
+                            <h2>Get In Touch</h2>
+                        </div>
+                        <div class="contact__info">
+                            <div class="icon__group">
+                                <div class="icon">
+                                    <i class="fa-solid fa-phone" style="color: #ffffff;"></i>
+                                </div>
+                                <div class="details">
+                                    <span>Phone</span>
+                                    <span>+40 773 702 861</span>
+                                </div>
+                            </div>
+                            <div class="icon__group">
+                                <div class="icon">
+                                    <i class="fa-solid fa-envelope" style="color: #ffffff;"></i>
+                                </div>
+                                <div class="details">
+                                    <span>Email</span>
+                                    <span>edialexutu@yahoo.com</span>
+                                </div>
+                            </div>
+                            <div class="icon__group">
+                                <div class="icon">
+                                    <i class="fa-solid fa-location-dot" style="color: #ffffff;"></i>
+                                </div>
+                                <div class="details">
+                                    <span>Location</span>
+                                    <span>Berlin, Germany</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="social__media">
+                            <a href="https://www.linkedin.com/in/alexandru-danciu-b837a5290/"><i class="fa-brands fa-linkedin" style="color: #ffffff;"></i></a>
+                            <a href="https://github.com/AxN21"><i class="fa-brands fa-github" style="color: #ffffff;"></i></a>
+                        </div>
+                    </section>
+
+
+                    <section class="col right">
+                        <form class="message__form">
+                            <div class="input__group halfWidth">
+                                <input type="text" name="" required="required">
+                                <label >Your Name</label>
+                            </div>
+                            <div class="input__group halfWidth">
+                                <input type="email" name="" required="required">
+                                <label >Email</label>
+                            </div>
+                            <div class="input__group fullWidth">
+                                <input type="text" name="" required="required">
+                                <label >Subject</label>
+                            </div>
+                            <div class="input__group fullWidth">
+                                <textarea required="required"></textarea>
+                                <label >Your Message</label>
+                            </div>
+                            <div class="input__group fullWidth" >
+                                <button>Send Message</button>
+                            </div>
+                        </form>
+
+                    </section>
+                </main>
+            </div>
  
         </main>
 
